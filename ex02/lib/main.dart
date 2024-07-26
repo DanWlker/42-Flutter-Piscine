@@ -25,21 +25,26 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor: Colors.black,
         body: Column(
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
-            // mainAxisSize: MainAxisSize.max,
-            // mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Expanded(child: Text('0', style: TextStyle(color: Colors.white), ), flex: 1),
-              Expanded(child: Text('0', style: TextStyle(color: Colors.white),), flex: 1),
-              Expanded(child: Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  CalculatorWidget(),
-                ],
-              ), flex: 1)
-              ],
-          ),
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
+          // mainAxisSize: MainAxisSize.max,
+          // mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Expanded(
+                child: Text(
+                  '0',
+                  style: TextStyle(color: Colors.white),
+                ),
+                flex: 1),
+            Expanded(
+                child: Text(
+                  '0',
+                  style: TextStyle(color: Colors.white),
+                ),
+                flex: 1),
+            Expanded(child: CalculatorWidget(), flex: 1)
+          ],
         ),
+      ),
     );
   }
 }

@@ -20,9 +20,13 @@ class ButtonWidget extends StatelessWidget {
         ),
       ),
       onPressed: () {},
-      child: Text(
-        text,
-        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+      child: Column(
+        children: [
+          Text(
+            text,
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+        ],
       ),
     );
   }
